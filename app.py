@@ -7,5 +7,8 @@ def main():
     years = int(input("Enter years: "))
 
 # calculate monthly payment
+monthly_interest_rate = apr / 1200
+amount_of_months = years * 12
+monthly_payment = principal * monthly_interest_rate / (1 - (1 + monthly_interest_rate) ** (-amount_of_months))
 
 # show user the result
